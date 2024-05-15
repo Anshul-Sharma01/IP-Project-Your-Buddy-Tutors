@@ -1,0 +1,605 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <%- include("nav.ejs") %>
+
+    <div id="searchDialog" class="search-dialog">
+      <div class="search-dialog-content">
+        <input type="text" placeholder="Search for courses" />
+        <a href="./All-Course.html"
+          ><button id="closeSearchDialog">Search</button></a
+        >
+      </div>
+    </div>
+
+    <!-- First Section starts from here -->
+    <section class="first_head_section">
+      <div class="main_content_first_head_section">
+        <h1>
+          Your Buddy <br />
+          Tutors
+        </h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur <br />
+          adipisicing elit. Itaque harum commodi sint officia
+        </p>
+        <div class="search_bar_first_section_courses">
+          <input placeholder="Search for courses" type="text" />
+          <a href="./All-Course.html"><button type="submit">Go</button></a>
+        </div>
+      </div>
+      <div class="carousel_for_first_section">
+        <div>
+          <div class="carousel">
+            <ul class="slides">
+              <input type="radio" name="radio-buttons" id="img-1" checked />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img src="./assets/tutor_dummy.jpeg" />
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-3" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-2" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons" id="img-2" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img
+                    src="https://content.r9cdn.net/rimg/dimg/db/02/06b291e8-city-14912-171317ad83a.jpg?width=1750&height=1000&xhint=3040&yhint=2553&crop=true"
+                  />
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-1" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-3" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <input type="radio" name="radio-buttons" id="img-3" />
+              <li class="slide-container">
+                <div class="slide-image">
+                  <img
+                    src="https://speakzeasy.files.wordpress.com/2015/05/twa_blogpic_timisoara-4415.jpg"
+                  />
+                </div>
+                <div class="carousel-controls">
+                  <label for="img-2" class="prev-slide">
+                    <span>&lsaquo;</span>
+                  </label>
+                  <label for="img-1" class="next-slide">
+                    <span>&rsaquo;</span>
+                  </label>
+                </div>
+              </li>
+              <div class="carousel-dots">
+                <label for="img-1" class="carousel-dot" id="img-dot-1"></label>
+                <label for="img-2" class="carousel-dot" id="img-dot-2"></label>
+                <label for="img-3" class="carousel-dot" id="img-dot-3"></label>
+              </div>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- First Section ends here -->
+
+    <!-- Third Section Starts Here -->
+    <section class="third_head_section">
+      <span class="line2"> Our Online Courses </span>
+      <h2>Find the right online course for you</h2>
+      <section class="third_head_section_div">
+        <%- include("online_course.ejs") %>
+      </section>
+    </section>
+    <!-- Third Section Ends here -->
+
+    <!-- Second Section starts from here -->
+
+    <section class="second_head_section">
+      <span class="line"> Course Category </span>
+      <h1>Explore Popular Courses</h1>
+      <section class="sub_second_head_section">
+        <div class="card">
+          <i class="fa fa-pencil" aria-hidden="true"></i>
+          <ul>
+            <li>UI/UX Designs</li>
+            <li>40+ courses</li>
+          </ul>
+        </div>
+        <div class="card">
+          <i class="fa fa-terminal"></i>
+          <ul>
+            <li>Coding</li>
+            <li>50+ courses</li>
+          </ul>
+        </div>
+        <div class="card">
+          <i class="fa fa-brush"></i>
+          <ul>
+            <li>Art & Crafts</li>
+            <li>35+ courses</li>
+          </ul>
+        </div>
+        <div class="card">
+          <i class="fa fa-microscope"></i>
+          <ul>
+            <li>Science</li>
+            <li>40+ courses</li>
+          </ul>
+        </div>
+        <div class="card">
+          <i class="fa fa-video"></i>
+          <ul>
+            <li>Photography</li>
+            <li>20+ courses</li>
+          </ul>
+        </div>
+        <div class="card">
+          <i class="fa fa-microchip"></i>
+          <ul>
+            <li>Operating System</li>
+            <li>40+ courses</li>
+          </ul>
+        </div>
+      </section>
+      <a href="/allcourse">
+        <button class="cssbuttons-io-button">
+          All Categories
+          <div class="icon">
+            <svg
+              height="24"
+              width="24"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path d="M0 0h24v24H0z" fill="none"></path>
+              <path
+                d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                fill="currentColor"
+              ></path>
+            </svg>
+          </div>
+        </button>
+      </a>
+    </section>
+    <!-- Second Section ends here -->
+
+    <!-- Fourth Section Starts here -->
+    <section class="fourth_head_section">
+      <div class="fourth_head_left_section">
+        <span class="line3"> Why Choose Us </span>
+        <h2>
+          Get An experience person in <br />
+          personal learning
+        </h2>
+        <img
+          class="tilted-image"
+          src="https://eduquest.itech-theme.com/wp-content/uploads/2023/08/video-thumb-1-768x378.jpg"
+          alt="dummy_img"
+        />
+      </div>
+      <div class="fourth_head_right_section">
+        <div class="fourth_head_section_card">
+          <div class="fourth_head_section_card_bg">
+            <i class="fa fa-folder"></i>
+            <h4>Learn From Anywhere</h4>
+            <p>
+              Providing multiple means of engage representation, and expression
+              for all students to learn.
+            </p>
+          </div>
+          <div class="fourth_head_section_bg_blob"></div>
+        </div>
+        <div class="fourth_head_section_card">
+          <div class="fourth_head_section_card_bg">
+            <i class="fa fa-heart"></i>
+            <h4>Enjoy learning</h4>
+            <p>
+              We are on a mission to make the learning enjoyable and the user
+              must be satisfied
+            </p>
+          </div>
+          <div class="fourth_head_section_bg_blob"></div>
+        </div>
+        <div class="fourth_head_section_card">
+          <div class="fourth_head_section_card_bg">
+            <i class="fa fa-truck"></i>
+            <h4>Various Fields</h4>
+            <p>
+              We are not just limited to one two topics but to the world
+              knowledge pool
+            </p>
+          </div>
+          <div class="fourth_head_section_bg_blob"></div>
+        </div>
+        <div class="fourth_head_section_card">
+          <div class="fourth_head_section_card_bg">
+            <i class="fa fa-crown"></i>
+            <h4>Monetise Your skills</h4>
+            <p>
+              You can monetise your skills and knowledge and start earnign your
+              first penny.
+            </p>
+          </div>
+          <div class="fourth_head_section_bg_blob"></div>
+        </div>
+      </div>
+    </section>
+    <!-- Fourth Section ends here -->
+
+    <!-- Fifth Section Starts here -->
+    <section class="fifth_head_section" id="instructors_sec">
+      <div class="fifth_head_section_uppersec">
+        <span class="line4"> Our Instructor </span>
+        <h2>Best Rated Instructors</h2>
+      </div>
+      <div class="fifth_head_section_lowersec">
+        <div class="fifth_section_card">
+          <img
+            src="./assets/instructor1.png"
+            class="fifth_section_card-image"
+          />
+          <div class="fifth_section_card_heading">
+            Vinay seth
+            <hr />
+            <div class="author">
+              <span> <i class="fa fa-folder"></i>10+ courses </span>
+              <span> <i class="fa fa-user"></i>students 40+ </span>
+            </div>
+          </div>
+        </div>
+        <div class="fifth_section_card">
+          <img
+            src="./assets/instructor2.png"
+            class="fifth_section_card-image"
+          />
+          <div class="fifth_section_card_heading">
+            John Doe
+            <hr />
+            <div class="author">
+              <span> <i class="fa fa-folder"></i>10+ courses </span>
+              <span> <i class="fa fa-user"></i>students 40+ </span>
+            </div>
+          </div>
+        </div>
+        <div class="fifth_section_card">
+          <img
+            src="./assets/instructor3.png"
+            class="fifth_section_card-image"
+          />
+          <div class="fifth_section_card_heading">
+            Sam altman
+            <hr />
+            <div class="author">
+              <span> <i class="fa fa-folder"></i>10+ courses </span>
+              <span> <i class="fa fa-user"></i>students 40+ </span>
+            </div>
+          </div>
+        </div>
+        <div class="fifth_section_card">
+          <img
+            src="./assets/instructor4.png"
+            class="fifth_section_card-image"
+          />
+          <div class="fifth_section_card_heading">
+            Sundar Pichai
+            <hr />
+            <div class="author">
+              <span> <i class="fa fa-folder"></i>10+ courses </span>
+              <span> <i class="fa fa-user"></i>students 40+ </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fifth Section Ends here -->
+
+    <!-- Sixth Section Starts here -->
+    <section class="sixth_head_section">
+      <span class="line2 line5">Our Testimonials</span>
+      <h2>What our customers say</h2>
+      <div class="testimonial">
+        <div class="container">
+          <div class="testimonial__inner">
+            <div class="testimonial-slider">
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>I earn from here by following my hobby</p>
+                      </div>
+                      <div class="testimonial_box-img">
+                        <img src="./assets/testimonials.jpeg" alt="profile" />
+                      </div>
+                      <div class="testimonial_box-name">
+                        <h4>Sankit Sanchi</h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Corporate</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>It helped me alot during my mid sems</p>
+                      </div>
+                      <div class="testimonial_box-img">
+                        <img src="./assets/testimonials.jpeg" alt="profile" />
+                      </div>
+                      <div class="testimonial_box-name">
+                        <h4>Chandramukhi</h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Bihar Technical University</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>
+                          I Earned my pocket money from here. Great initiative
+                          ⭐
+                        </p>
+                      </div>
+                      <div class="testimonial_box-img">
+                        <img src="./assets/testimonials.jpeg" alt="profile" />
+                      </div>
+                      <div class="testimonial_box-name">
+                        <h4>Ankit Janeman</h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Delhi University</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>
+                          This website helped me a lot during my end sems. Kudos
+                          to the creators👏👏
+                        </p>
+                      </div>
+                      <div class="testimonial_box-img">
+                        <img src="./assets/testimonials.jpeg" alt="profile" />
+                      </div>
+                      <div class="testimonial_box-name">
+                        <h4>Arnab Seni</h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Chitkara University</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="testimonial-slide">
+                <div class="testimonial_box">
+                  <div class="testimonial_box-inner">
+                    <div class="testimonial_box-top">
+                      <div class="testimonial_box-icon">
+                        <i class="fas fa-quote-right"></i>
+                      </div>
+                      <div class="testimonial_box-text">
+                        <p>Website UI is eye catching</p>
+                      </div>
+                      <div class="testimonial_box-img">
+                        <img src="./assets/testimonials.jpeg" alt="profile" />
+                      </div>
+                      <div class="testimonial_box-name">
+                        <h4>Vikram Seth</h4>
+                      </div>
+                      <div class="testimonial_box-job">
+                        <p>Student IIT</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sixth Section Ends here -->
+
+    <!-- Seventh Section Starts here -->
+    <section class="seventh_head_section">
+      <div class="seventh_head_section_wrapper">
+        <i class="fa fa-paperclip"></i>
+        <h3>10K+</h3>
+        <p>Happy Students</p>
+      </div>
+      <div class="seventh_head_section_wrapper">
+        <i class="fa fa-paperclip"></i>
+        <h3>75+</h3>
+        <p>Happy Students</p>
+      </div>
+      <div class="seventh_head_section_wrapper">
+        <i class="fa fa-paperclip"></i>
+        <h3>69+</h3>
+        <p>Happy Students</p>
+      </div>
+      <div class="seventh_head_section_wrapper">
+        <i class="fa fa-paperclip"></i>
+        <h3>29+</h3>
+        <p>Happy Students</p>
+      </div>
+    </section>
+    <!-- Seventh Section Ends here-->
+
+    <!-- Eigth Section Starts here -->
+    <section class="eigth_head_section">
+      <div class="eigth_head_img">
+        <img
+          src="./assets/about_img.png"
+          alt="about_img"
+          class="eigth_section_main_img"
+        />
+      </div>
+      <ul class="eigth_section_ul">
+        <li>
+          <span class="line6"> About Us </span>
+        </li>
+        <li>
+          <h2>Explore expert discover Instructors from around the globe</h2>
+        </li>
+        <li>
+          <p>
+            Delve into a world of knowledge with our exceptional instructors who
+            hail from every corner of the globe. Our diverse team of expert
+            educators is here to save you!!
+          </p>
+        </li>
+        <li class="eigth_section_li_special">
+          <i class="fa fa-check"></i>
+          Get access to our top 4,000+ courses
+        </li>
+        <li class="eigth_section_li_special">
+          <i class="fa fa-check"></i>
+          Popular topics to learn now
+        </li>
+        <li class="eigth_section_li_special">
+          <i class="fa fa-check"></i>
+          Find the right instructor for you
+        </li>
+        <li>
+          <button class="eigth_section_btn">
+            Discover More
+            <svg fill="currentColor" viewBox="0 0 24 24" class="icon">
+              <path
+                clip-rule="evenodd"
+                d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25zm4.28 10.28a.75.75 0 000-1.06l-3-3a.75.75 0 10-1.06 1.06l1.72 1.72H8.25a.75.75 0 000 1.5h5.69l-1.72 1.72a.75.75 0 101.06 1.06l3-3z"
+                fill-rule="evenodd"
+              ></path>
+            </svg>
+          </button>
+        </li>
+      </ul>
+    </section>
+    <!-- Eigth Section Ends here -->
+
+    <!-- Footer starts from here -->
+    <%- include("footer.ejs") %>
+    <script>
+      //  for redirect in loginpage
+      function redirectToLogin() {
+        window.location.href = "/login";
+      }
+      //  for redirect in singuppage
+      function redirectToSingup() {
+        // window.location.href = "login/index.html";
+        window.location.href = "/sing";
+      }
+
+      // JS code for carousel auto rendering
+      // Function to change slide automatically
+      function autoSlide() {
+        // Get all radio buttons
+        const radioButtons = document.querySelectorAll('input[type="radio"]');
+        let currentIndex = 0;
+
+        // Find the currently checked radio button
+        radioButtons.forEach((radioButton, index) => {
+          if (radioButton.checked) {
+            currentIndex = index;
+          }
+        });
+
+        // Get the next slide index
+        const nextIndex = (currentIndex + 1) % radioButtons.length;
+
+        // Set the next slide to checked
+        radioButtons[nextIndex].checked = true;
+      }
+
+      // Start automatic sliding
+      const intervalId = setInterval(autoSlide, 2000); // Change slide every 5 seconds
+
+      // js code for testimonial slider:
+      document.addEventListener("DOMContentLoaded", function () {
+        var slider = document.querySelector(".testimonial-slider");
+        var slideWidth = slider.querySelector(".testimonial-slide").offsetWidth;
+        var currentPosition = 0;
+        var slideCount = slider.querySelectorAll(".testimonial-slide").length;
+        var slideInterval = 2000; // Interval between slides in milliseconds
+
+        function slideNext() {
+          currentPosition += slideWidth;
+          if (currentPosition >= slideWidth * slideCount) {
+            currentPosition = 0;
+          }
+          slider.style.transition = "transform 0.5s ease-in-out";
+          slider.style.transform = "translateX(-" + currentPosition + "px)";
+        }
+
+        var slideTimer = setInterval(slideNext, slideInterval);
+      });
+
+      // Js code for search bar:
+      document.addEventListener("DOMContentLoaded", function () {
+        var searchIcon = document.getElementById("searchIcon");
+        var searchDialog = document.getElementById("searchDialog");
+        var closeSearchDialog = document.getElementById("closeSearchDialog");
+
+        // Open search dialog when search icon is clicked
+        searchIcon.addEventListener("click", function () {
+          searchDialog.style.display = "block";
+        });
+
+        // Close search dialog when close button is clicked
+        closeSearchDialog.addEventListener("click", function () {
+          searchDialog.style.display = "none";
+        });
+      });
+    </script>
+  </body>
+</html>

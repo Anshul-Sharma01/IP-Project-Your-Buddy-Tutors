@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Upload Lecture</title>
+    <link rel="stylesheet" href="upload_video.css" />
+  </head>
+  <body>
+    <%- include("nav.ejs") %>
+    <section class="upload">
+      <div class="left_section">
+        <form action="/upload" method="post" enctype="multipart/form-data">
+          <label for="title">Title : </label>
+          <input type="text" name="course" id="title" />
+          <br />
+          <br />
+            
+          <label for="lbl">Label : </label>
+          <input type="text" name="label" id="lbl" />
+          <br />
+          <br />
+          <label for="desc">Description : </label>
+          <input type="text" name="desc"/>
+          <br />
+          <br />
+          <label for="category">Category : </label>
+          <input type="text" id="category" name="category" />
+          <br />
+          <br />
+          <label for="paid">Price : </label>
+          <input type="password"  id="paid" name="paid" />
+          <br />
+          <br />
+          <label for="hours">Total No. of Hours : </label>
+          <input type="number" id="hours" name="hourse">
+          <br><br>
+          <label for="no_of_lec">Number of Lectures : </label>
+          <input type="number" value="5" name="no_of_lec" /><br>
+          <input type="file"  name="img" />
+     
+        <div class="btns">
+          <a href="profile.html">
+            <button>Go Back</button>
+          </a>
+          <button type="submit">Upload Video</button>
+          <!-- <input type="submit" /> -->
+        </div>
+      </div>
+      <div class="right_section">
+        <div class="input-div">
+          <!-- <input class="input" name="file" type="file" /> -->
+        
+          <input type="file" name="video" class="input" accept="video/*" multiple />
+             </form>
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="2em"
+            height="2em"
+            stroke-linejoin="round"
+            stroke-linecap="round"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            fill="none"
+            stroke="currentColor"
+            class="icon"
+          >
+            <polyline points="16 16 12 12 8 16"></polyline>
+            <line y2="21" x2="12" y1="12" x1="12"></line>
+            <path d="M20.39 18.39A5 5 0 0 0 18 9h-1.26A8 8 0 1 0 3 16.3"></path>
+            <polyline points="16 16 12 12 8 16"></polyline>
+          </svg>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

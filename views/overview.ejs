@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/overview.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include("nav.ejs") %>
+
+    <br /><br /><br /><br /><br /><br /><br />
+    <div class="main-overview-container">
+      <div class="courses-overview">
+        <div class="image-overview">
+          <img src="<%=data.template[0].split("\\upload")[1]%>" alt="Dummy Image" />
+        </div>
+        <div class="course-description">
+          <div class="course-image">
+            <div class="courses-img">
+              <img src="/person.png" alt="Dummy Image" />
+            </div>
+            <div class="teacher-name">
+              <span>SK AL<br /><small><%= data.username %></small></span>
+            </div>
+          </div>
+          <div class="hr"><hr /></div>
+          <div class="course-category">
+            <span>category:<%= data.category %></span>
+          </div>
+          <div class="hr"><hr /></div>
+          <div class="course-review">
+            <span> 3 review<br />⭐⭐⭐⭐⭐</span>
+          </div>
+        </div>
+
+        <div class="overview-description">
+          <h1>Overview</h1>
+          <div class="main-description">
+            <p>
+              <strong>Are you new to PHP or need a refresher? </strong>
+
+              <strong
+                >You can find a job anywhere or even work on your own, online
+                and in places like freelancer or Odesk. </strong
+              >You can definitely make a substantial income once you learn it. I
+              will not bore you I take my courses very seriously but at the same
+              time I try to make it fun since I know how difficult learning from
+              an instructor with a monotone voice or boring attitude is. This
+              course is fun, and when you need some energy to keep going, you
+              will get it from me. My Approach Practice, practice and more
+              practice. Every section inside this course has a practice lecture
+              at the end, reinforcing everything with went over in the lectures.
+              <strong
+                >I also created a small application the you will be able to
+                download to help you practice PHP. To top it off, we will build
+                and awesome CMS like WordPress, Joomla or Drupal.</strong
+              >
+            </p>
+          </div>
+        </div>
+        <br />
+
+        <div class="course-d">
+          <h1>Course Content</h1>
+          <div class="main-heading">
+            <button id="toggleButton">Advance Concepts</button>
+            <div id="toggle-element" class="hidden">
+              <ul>
+                <li>
+                  <div class="sub-heading">
+                    <div class="image-heading">
+                      <img src="/play-button.png" alt="Dummy Image" />
+                    </div>
+                    <div class="sub-sub-heading">
+                      <span> Meal Planning Explained</span>
+                    </div>
+                  </div>
+                  <div class="sub-time"><span class="time">07:00</span></div>
+                </li>
+                <li>
+                  <div class="sub-heading">
+                    <div class="image-heading">
+                      <img src="/play-button.png" alt="Dummy Image" />
+                    </div>
+                    <div class="sub-sub-heading">
+                      <span>Macronutrients Explained</span>
+                    </div>
+                  </div>
+                  <div class="sub-time"><span class="time">07:00</span></div>
+                </li>
+                <li>
+                  <div class="sub-heading">
+                    <div class="image-heading">
+                      <img src="/play-button.png" alt="Dummy Image" />
+                    </div>
+                    <div class="sub-sub-heading">
+                      <span>Adjusting Your Diet To Build Muscle</span>
+                    </div>
+                  </div>
+                  <div class="sub-time"><span class="time">07:00</span></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <br />
+          <div class="main-heading">
+            <button id="toggleButton2">Basic Concepts</button>
+            <div id="toggle-element2" class="hidden">
+              <ul>
+                <li>
+                  <div class="sub-heading">
+                    <div class="image-heading">
+                      <img src="/play-button.png" alt="Dummy Image" />
+                    </div>
+                    <div class="sub-sub-heading">
+                      <span> Meal Planning Explained</span>
+                    </div>
+                  </div>
+                  <div class="sub-time"><span class="time">07:00</span></div>
+                </li>
+                <li>
+                  <div class="sub-heading">
+                    <div class="image-heading">
+                      <img src="/play-button.png" alt="Dummy Image" />
+                    </div>
+                    <div class="sub-sub-heading">
+                      <span>Macronutrients Explained</span>
+                    </div>
+                  </div>
+                  <div class="sub-time"><span class="time">07:00</span></div>
+                </li>
+                <li>
+                  <div class="sub-heading">
+                    <div class="image-heading">
+                      <img src="/play-button.png" alt="Dummy Image" />
+                    </div>
+                    <div class="sub-sub-heading">
+                      <span>Adjusting Your Diet To Build Muscle</span>
+                    </div>
+                  </div>
+                  <div class="sub-time"><span class="time">07:00</span></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <br /><br />
+        <div class="review-container">
+          <div class="review-section">
+            <div class="review-1">
+              <div class="review-number"><p>4.7</p></div>
+              <div class="review-star"><p>⭐⭐⭐⭐⭐</p></div>
+              <div class="total-review"><p>Total 3 Ratings</p></div>
+            </div>
+            <div class="review-rating">
+              <div class="one-column-rating"><p>⭐ 5</p></div>
+              <div class="two-column-rating"><hr /></div>
+              <div class="three-column-rating"><p>2 Rating</p></div>
+
+              <div class="one-column-rating"><p>⭐ 4</p></div>
+              <div class="two-column-rating"><hr /></div>
+              <div class="three-column-rating"><p>1 Rating</p></div>
+
+              <div class="one-column-rating"><p>⭐ 3</p></div>
+              <div class="two-column-rating"><hr /></div>
+              <div class="three-column-rating"><p>0 Rating</p></div>
+
+              <div class="one-column-rating"><p>⭐ 2</p></div>
+              <div class="two-column-rating"><hr /></div>
+              <div class="three-column-rating"><p>0 Rating</p></div>
+
+              <div class="one-column-rating"><p>⭐ 1</p></div>
+              <div class="two-column-rating"><hr /></div>
+              <div class="three-column-rating"><p>0 Rating</p></div>
+            </div>
+          </div>
+          <hr />
+          <div class="written-review">
+            <div class="written-month"><p>6 month ago</p></div>
+            <div class="write-review">
+              <p>⭐⭐⭐⭐⭐</p>
+              <p>
+                The course is extraordinary!! <br />
+                explains everything from A to Z regarding Nutrition and also
+                there are some very valuable workout tips. <br />Great job!
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="written-review">
+            <div class="written-month"><p>6 month ago</p></div>
+            <div class="write-review">
+              <p>⭐⭐⭐⭐⭐</p>
+              <p>
+                The course is extraordinary!! <br />
+                explains everything from A to Z regarding Nutrition and also
+                there are some very valuable workout tips. <br />Great job!
+              </p>
+            </div>
+          </div>
+          <hr />
+          <div class="written-review">
+            <div class="written-month"><p>6 month ago</p></div>
+            <div class="write-review">
+              <p>⭐⭐⭐⭐⭐</p>
+              <p>
+                Absolutely fantastic!!. <br />
+                Thanks so, so much Felix for your concise, practically useful
+                and well informed course.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="video-container">
+        <div class="price-container">
+          <video controls>
+            <source src="<%=data.courses[0].split("\\upload")[1]%>" type="video/mp4" />
+          </video>
+          <div class="course-pricing"><h3>Course Pricing</h3></div>
+          <div class="price-view"><p class="price-view">Free</p></div>
+          <div class="course-feature">
+            <div><h2>Course Features</h2></div>
+            <div><hr /></div>
+          </div>
+          <div class="video-description">
+            <ul>
+              <li>
+                <img src="/checked.png" alt="Dummy Image" /> 4 hours on-demand
+                video
+              </li>
+              <li><img src="/checked.png" alt="Dummy Image" /> 4 articles</li>
+              <li>
+                <img src="/checked.png" alt="Dummy Image" /> 3 downloadable
+                resources
+              </li>
+              <li>
+                <img src="/checked.png" alt="Dummy Image" /> Full lifetime
+                access
+              </li>
+              <li>
+                <img src="/checked.png" alt="Dummy Image" /> Access on mobile
+                and TV
+              </li>
+              <li>
+                <img src="/checked.png" alt="Dummy Image" /> Certificate of
+                Completion
+              </li>
+            </ul>
+          </div>
+          <div class="enroll-btn">
+            <a href="/video/<%=data.id%>"> <button class="enroll-btn">Enroll now</button></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br /><br /><br /><br /><br />
+    <script src="/overview.js"></script>
+  </body>
+</html>

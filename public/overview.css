@@ -1,0 +1,315 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #efecec;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  height: auto;
+  width: auto;
+}
+
+.main-overview-container {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+}
+
+.image-overview img {
+  height: 450px;
+  width: 720px;
+  border-radius: 10px;
+}
+.course-description {
+  background-color: white;
+  width: 700px;
+  height: 120px;
+  margin-left: 8px;
+  border-radius: 10px;
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+}
+.course-image {
+  display: flex;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.course-image img {
+  height: 80px;
+  border-radius: 40px;
+  border: 2px solid brown;
+}
+.teacher-name {
+  display: grid;
+  place-items: center;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: larger;
+  font-weight: bolder;
+}
+.teacher-name small {
+  font-weight: lighter;
+}
+hr {
+  opacity: 0.5;
+  height: 40%;
+}
+.hr,
+.course-category,
+.course-review {
+  display: grid;
+  place-items: center;
+}
+.course-category,
+.course-review {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: bolder;
+}
+.course-review {
+  text-align: center;
+}
+
+.overview-description p {
+  padding: 25px 0 0 0;
+  font-size: 17px;
+  word-spacing: 2px;
+  width: 650px;
+  /* align-items: center; */
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin: 0 0 0 25px;
+}
+
+.main-description {
+  width: 700px;
+  background-color: white;
+  height: 500px;
+  border-radius: 10px;
+}
+
+/*Course content */
+.main-heading {
+  max-width: 700px;
+  border-radius: 10px;
+  background-color: white;
+}
+/* .main-heading {
+  display:grid;
+  place-items: center;
+} */
+.main-heading button {
+  color: #333;
+  font-size: 21px;
+  width: 700px;
+  height: 50px;
+  text-align: left;
+  border-radius: 10px;
+  background-color: white;
+  border: 0px solid white;
+  border-bottom: 1px solid #ddd;
+  padding-top: 2px;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.main-heading button:hover {
+  background-color: rgb(240, 240, 255);
+  color: rgb(70, 192, 240);
+}
+.main-heading ul {
+  list-style: none;
+  padding: 2px 0px 12px 0px;
+  margin-top: 5px;
+  /* margin-left:5px; */
+}
+.main-heading li {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Roboto";
+  padding: 10px;
+  cursor: pointer;
+}
+.main-heading li:hover {
+  background-color: rgb(240, 240, 255);
+}
+.time {
+  color: #888;
+}
+.hidden {
+  display: none;
+}
+.image-heading img {
+  height: 28px;
+  width: 28px;
+}
+
+.sub-sub-heading,
+.sub-time {
+  display: grid;
+  place-items: center;
+}
+.sub-heading {
+  display: flex;
+  gap: 8px;
+}
+.image-heading {
+  font-size: 1px;
+}
+/* Course content finished */
+
+/* review section */
+.review-container {
+  background-color: white;
+  height: auto;
+  width: 700px;
+  border-radius: 20px;
+}
+
+.review-number p {
+  text-align: center;
+  margin: 15px 0px 10px 10px;
+  height: 100px;
+  font-size: 80px;
+  font-weight: 700;
+}
+.review-star p {
+  margin: 0px 20px 0px 35px;
+  height: 50px;
+  font-size: 19px;
+}
+.total-review p {
+  height: 75px;
+  font-size: 19px;
+  font-family: monospace;
+  margin: 15px 0 0 20px;
+  font-weight: 500;
+  color: #8a8080;
+}
+.review-section {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+}
+.review-rating {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* height:100px; */
+  /* gap:0px; */
+}
+.two-column-rating hr {
+  width: 300px;
+  height: 10px;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 18px 35px 18px 0;
+}
+.review-rating div:nth-child(2) hr {
+  background: linear-gradient(to right, gold 75%, white 25%);
+}
+.review-rating div:nth-child(5) hr {
+  background: linear-gradient(to right, rgb(255, 217, 0) 25%, white 25%);
+}
+.three-column-rating p {
+  margin: 16px 0px 18px 0;
+  /* padding-right:10px; */
+  font-family: monospace;
+  color: #8a8080;
+  font-weight: 600;
+  font-size: 15px;
+}
+.one-column-rating p {
+  margin: 11px 0 18px 0;
+  font-family: monospace;
+  color: #8a8080;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.written-review {
+  display: flex;
+  gap: 60px;
+}
+.written-month p {
+  width: 150px;
+  text-align: center;
+  margin: 40px 0 0 0;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.write-review p {
+  text-align: left;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+/* review section ends */
+
+/* video price section starts */
+.price-container {
+  width: 350px;
+  /* margin: 0 auto; */
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+.price-view {
+  font-size: 50px;
+  font-weight: bold;
+  color: #e74c3c;
+  margin: 0 0 30px 0;
+}
+
+.video-description ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0 0 10px 0;
+}
+.course-pricing h3 {
+  font-size: 18px;
+}
+.video-description img {
+  height: 15px;
+  width: 17px;
+}
+
+.video-description li {
+  margin: 8px;
+}
+.course-feature {
+  display: grid;
+  grid-template-columns: 150px 175px;
+}
+.course-feature h2 {
+  font-size: 19px;
+}
+.course-feature hr {
+  margin: 26px 0 0 20px;
+  height: 2px;
+  width: 100px;
+  border: 1px solid red;
+  background-color: rgba(190, 0, 0, 0.923);
+  border-radius: 10px;
+}
+.price-container button {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: 340px;
+  border-radius: 5px;
+}
+.enroll-btn {
+  margin: 0 0 0 3px;
+}
+.price-container button:hover {
+  background-color: #c0392b;
+}
+
+.price-container video {
+  width: 340px;
+  height: 200px;
+}

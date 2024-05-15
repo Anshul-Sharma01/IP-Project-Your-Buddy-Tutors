@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Your Profile</title>
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="edit_your_profile.css" />
+  </head>
+  <body>
+    <%- include("nav.ejs") %>
+    <section>
+      <div class="container">
+        <h1 class="title">Edit Profile</h1>
+
+        <div class="grid">
+          <div class="form-group a">
+            <label for="name">Name</label>
+            <input id="name" type="text" />
+          </div>
+
+          <div class="form-group b">
+            <label for="first-name">Age</label>
+            <input id="first-name" type="number" />
+          </div>
+
+          <div class="form-group email-group">
+            <label for="email">Email</label>
+            <input id="email" type="text" />
+          </div>
+
+          <div class="form-group phone-group">
+            <label for="phone">Téléphone</label>
+            <input id="phone" type="text" />
+          </div>
+
+          <div class="textarea-group">
+            <label for="bio">Bio</label>
+            <textarea id="bio"></textarea>
+          </div>
+
+          <div class="form-group">
+            <label for="address">Address</label>
+            <input id="address" type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="city">State</label>
+            <input id="city" type="text" />
+          </div>
+
+          <div class="form-group">
+            <label for="zip">City</label>
+            <input id="zip" type="text" />
+          </div>
+        </div>
+
+        <div class="checkboxes">
+          <div class="checkbox-group">
+            <input id="newsletter-partners" type="checkbox" />
+            <label for="newsletter-partners"
+              >I agree to terms and conditions</label
+            >
+          </div>
+        </div>
+
+        <div class="button-container">
+          <a href="/profile"><button class="button">Back to Profile</button></a>
+          <button class="button">Change my Profile</button>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

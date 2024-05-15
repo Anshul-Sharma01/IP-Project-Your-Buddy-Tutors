@@ -1,0 +1,101 @@
+.first_profile_section{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.left_section{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+    justify-content: center;
+    align-items: center;
+    width:40%;
+}
+
+.right_section{
+    width:60%;
+    display:flex;
+    flex-direction:column;
+}
+
+button{
+    background-color: red;
+    color:white;
+    border:2px solid white;
+    border-radius: 5px;
+    padding:16px 12px;
+    cursor:pointer;
+    width:150px;
+}
+
+button:hover{
+    background-color: white;
+    color:red;
+    border:2px solid red;
+    transition:0.1s;
+    transform: translateY(-2px);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+}
+
+img{
+    background: transparent;
+    border:2px solid black;
+    border-radius:50%;
+    cursor:pointer;
+    height:200px;
+    /* width:280px; */
+    
+}
+
+
+.changepic{
+    /* width:150px; */
+    text-align:center;
+}
+
+form{
+    margin:40px;
+    width:200px;
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+    gap:5px;
+}
+
+label{
+    font-size:20px;
+}
+
+input[type="text"],input[type="number"],textarea{
+    padding:5px;
+    background: transparent;
+    border:none;
+    /* border:0px */
+    border-bottom:2px solid red;
+}
+
+input[type="file"]{
+    background-color:red;
+    width:114px;
+    overflow:hidden;
+    color:white;
+    border:2px solid white;
+    border-radius:5px;
+}
+
+input[type="file"]::-webkit-file-upload-button{
+    background-color: red;
+    color:white;
+    padding:20px;
+    border:2px solid white;
+
+}
+input[type="file"]::-webkit-file-upload-button:hover{
+    background-color: white;
+    color:red;
+    cursor:pointer;
+    border:2px solid red;
+}
+

@@ -1,0 +1,131 @@
+body {
+  background-color: #efecec;
+}
+
+hr {
+  border-top: 1px solid rgba(0, 0, 0, 0);
+}
+.container-course {
+  display: flex;
+  justify-content: flex-start;
+  gap: 30px;
+  /* padding:20px; */
+}
+.form-table {
+  font-family: "DM Sans", sans-serif;
+  font-size: 16px;
+  /* padding:20px; */
+}
+.form-table label,
+input {
+  cursor: pointer;
+}
+.form-table .form-item,
+.form-item2,
+.form-item3 {
+  border: 1px solid white;
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+.form-item {
+  height: 180px;
+  width: 250px;
+}
+.form-item2 {
+  height: 300px;
+  width: 250px;
+}
+.form-item3 {
+  height: 450px;
+  width: 250px;
+}
+
+.image-container {
+  position: relative;
+  display: inline-block;
+}
+
+.text-above {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  color: white;
+  font-size: 17px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 0px 5px 5px 5px;
+  border-radius: 8px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  height: auto;
+  width: 250px;
+  /* margin:100px; */
+}
+.grid-item {
+  border: 1px solid white;
+  background-color: white;
+  padding: 10px;
+  height: auto;
+  width: 250px;
+  border-radius: 8px;
+  /* margin:10px; */
+}
+.image-container img {
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+}
+.time-level img:nth-child(1) {
+  height: 13px;
+  width: 13px;
+}
+.time-level img:nth-child(2) {
+  height: 16px;
+  width: 18px;
+}
+.time-level {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  display: flex;
+  justify-content: space-around;
+}
+.mentor span {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  padding-left: 8px;
+  padding-bottom: 30px;
+}
+.mentor img {
+  border-radius: 15px;
+  height: 36px;
+  width: 36px;
+}
+.course-title {
+  font-size: 12px;
+  border-radius: 4px;
+  color: #ff3158;
+  background: rgba(255, 49, 88, 0.1);
+  font-weight: 600;
+  padding: 4px 12px;
+  width: 60px;
+}
+h4 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 900;
+}
+.no-underline {
+  text-decoration: none;
+  color: black;
+}
+.no-underline:hover {
+  color: #ff3158;
+}

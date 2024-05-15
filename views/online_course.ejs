@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+   <% 
+  course.forEach((course, ind) => {  
+ 
+    if(ind > 5) { 
+      
+      return; 
+    }
+%>
+
+    <div class="third_head_section_card">
+      <img
+        src="<%=course.template[0].split("\\upload")[1]%>"
+        alt="dummy image"
+        class="third_head_section_img"
+      />
+      <div class="third_head_section_ul_wrapper">
+        <ul class="third_head_section_first_ul">
+          <li><i class="fa fa-folder"> 6 lessons</i></li>
+          <li><i class="fa fa-clock"> &nbsp;<%= course.duration %></i></li>
+        </ul>
+        <ul class="third_head_section_second_ul">
+          <li>
+            <h3><a href="#"><%= course.Title %></a></h3>
+          </li>
+          <li style="color: grey">5.0⭐(24 ratings)</li>
+        </ul>
+      </div>
+    </div>
+  <% }); %>
+  </body>
+</html>

@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+  <head>
+    <title>All Courses</title>
+    <link rel="stylesheet" type="text/css" href="All_course.css" />
+  </head>
+  <body>
+    <%- include("nav.ejs") %>
+    <div class="container-course">
+      <div class="form-table">
+        <form action="" class="form-item">
+          <h4>Difficulty Level</h4>
+          <hr />
+          <input type="checkbox" id="beginner" /><label for="beginner"
+            >Beginner</label
+          ><br /><br />
+          <input type="checkbox" id="intermediate" /><label for="intermediate"
+            >Intermediate</label
+          ><br /><br />
+          <input type="checkbox" id="expert" /><label for="expert">Expert</label
+          ><br /><br />
+        </form>
+        <br /><br />
+
+        <form action="" class="form-item2">
+          <h4>Category</h4>
+          <hr />
+          <input type="checkbox" id="business" /><label for="business"
+            >Business</label
+          ><br /><br />
+          <input type="checkbox" id="Design" /><label for="Design">Design</label
+          ><br /><br />
+          <input type="checkbox" id="Marketing" /><label for="Marketing"
+            >Marketing</label
+          ><br /><br />
+          <input type="checkbox" id="Math" /><label for="Math">Math</label
+          ><br /><br />
+          <input type="checkbox" id="Health&Fitness" /><label
+            for="Health&Fitness"
+            >Health&Fitness</label
+          ><br /><br />
+          <input type="checkbox" id="Photography" /><label for="Photography"
+            >Photography</label
+          ><br /><br />
+        </form>
+        <br />
+        <br />
+        <form action="" class="form-item3">
+          <h4>Topic</h4>
+          <hr />
+          <input type="checkbox" id="Adobe Photoshop" /><label
+            for="Adobe Photoshop"
+            >Adobe Photoshop</label
+          ><br /><br />
+          <input type="checkbox" id="Adobe XD" /><label for="Adobe XD"
+            >Adobe XD</label
+          ><br /><br />
+          <input type="checkbox" id="App Development" /><label
+            for="App Development"
+            >App Development</label
+          ><br /><br />
+          <input type="checkbox" id="Graphic Design" /><label
+            for="Graphic Design"
+            >Graphic Design</label
+          ><br /><br />
+          <input type="checkbox" id="Heath & Fitness" /><label
+            for="Heath & Fitness"
+            >Heath & Fitness</label
+          ><br /><br />
+          <input type="checkbox" id=" Illustrations" /><label
+            for=" Illustrations"
+          >
+            Illustrations</label
+          ><br /><br />
+          <input type="checkbox" id="JavaScript" /><label for="JavaScript"
+            >JavaScript</label
+          ><br /><br />
+          <input type="checkbox" id="PHP" /><label for="PHP">PHP</label
+          ><br /><br />
+          <input type="checkbox" id="UI Design" /><label for="UI Design"
+            >UI Design</label
+          ><br /><br />
+          <input type="checkbox" id=" UX Design" /><label for=" UX Design">
+            UX Design</label
+          ><br /><br />
+        </form>
+        <br /><br />
+      </div>
+      <br /><br />
+      <div class="grid-container"><%- include("course.ejs") %></div>
+    </div>
+  </body>
+</html>

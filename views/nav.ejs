@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/nav.css" />
+    <title>navbar</title>
+  </head>
+  <body>
+    <nav class="nav-home">
+      <img src="/logo.png" alt="Logo" class="navbar_logo_img" />
+      <ul class="nav_ul">
+        <li><a href="/index">Home</a></li>
+        <li><a href="/allcourse">Categories</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul>
+        <li>
+          <i class="fas fa-search" id="searchIcon"></i>
+        </li>
+
+        <% if (isLoggedIn) { %>
+        <li>
+          <a href="/profile"> <i class="fas fa-user-circle"></i></a>
+        </li>
+        <% }else{ %>
+        <li>
+          <button class="login_btn" onclick="redirectToLogin()">LogIn</button>
+        </li>
+        <li>
+          <button class="signin_btn" onclick="redirectToSingup()">
+            SignUp
+          </button>
+        </li>
+        <% } %>
+      </ul>
+    </nav>
+
+    <script>
+      //  for redirect in loginpage
+      function redirectToLogin() {
+        window.location.href = "/login";
+      }
+      //  for redirect in singuppage
+      function redirectToSingup() {
+        // window.location.href = "login/index.html";
+
+        window.location.href = "/sing";
+      }
+    </script>
+  </body>
+</html>

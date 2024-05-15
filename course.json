@@ -1,0 +1,203 @@
+[
+  {
+    "id": 1,
+    "username": "sat123",
+    "email": "sat@123",
+    "label": "Easy",
+    "duration": "89",
+    "price": "499",
+    "category": "ruby",
+    "Title": "introduction in ruby",
+    "courses": [
+      "E:\\ip_back\\upload\\sat123\\ruby\\intro.mp4",
+      "E:\\ip_back\\upload\\sat123\\ruby\\1715176715.0690882.mp4",
+      "E:\\ip_back\\upload\\sat123\\ruby\\1715176715.0691054.mp4"
+    ],
+    "template": ["E:\\ip_back\\upload\\sat123\\ruby\\download.jpeg"]
+  },
+  {
+    "id": 2,
+    "username": "sat123",
+    "email": "sat@123",
+    "label": "Easy",
+    "duration": "12",
+    "price": "789",
+    "category": "c",
+    "Title": "introduction in c",
+    "courses": ["E:\\ip_back\\upload\\sat123\\c\\Tell me your weakness .mp4"],
+    "template": ["E:\\ip_back\\upload\\sat123\\c\\download.jpeg"]
+  },
+  {
+    "id": 3,
+    "username": "sat123",
+    "email": "sat@123",
+    "label": "Easy",
+    "duration": "56",
+    "price": "56689",
+    "category": "hmmmm",
+    "Title": "introduction in python",
+    "courses": [
+      "E:\\ip_back\\upload\\sat123\\hmmmm\\Tell me your weakness .mp4",
+      "E:\\ip_back\\upload\\sat123\\hmmmm\\Why do you want to join us_ Interview Question #7.mp4",
+      "E:\\ip_back\\upload\\sat123\\hmmmm\\Why should we hire you_ Interview Question #6.mp4"
+    ],
+    "template": ["E:\\ip_back\\upload\\sat123\\hmmmm\\download.jpeg"]
+  },
+  {
+    "id": 4,
+    "username": "sat123",
+    "email": "sat@123",
+    "label": "hard",
+    "duration": "45",
+    "price": "899",
+    "category": "ruby2.0",
+    "Title": "introduction in ruby",
+    "courses": [
+      "E:\\ip_back\\upload\\sat123\\ruby2.0\\1715176715.0690765.mp4",
+      "E:\\ip_back\\upload\\sat123\\ruby2.0\\1715176715.0690882.mp4",
+      "E:\\ip_back\\upload\\sat123\\ruby2.0\\1715176715.0691054.mp4"
+    ],
+    "template": ["E:\\ip_back\\upload\\sat123\\ruby2.0\\download.jpeg"]
+  },
+  {
+    "id": 5,
+    "username": "sat123",
+    "email": "sat@123",
+    "label": "Easy",
+    "duration": "56",
+    "price": "56",
+    "category": "h+++",
+    "Title": "introduction in c",
+    "courses": [
+      "E:\\ip_back\\upload\\sat123\\h+++\\1715176715.0690765.mp4",
+      "E:\\ip_back\\upload\\sat123\\h+++\\1715176715.0690882.mp4",
+      "E:\\ip_back\\upload\\sat123\\h+++\\1715176715.0691054.mp4"
+    ],
+    "template": ["E:\\ip_back\\upload\\sat123\\h+++\\download.jpeg"]
+  },
+  {
+    "id": 6,
+    "username": "sat123",
+    "email": "sat@123",
+    "label": "Easy",
+    "duration": "798",
+    "price": "789",
+    "category": "python3.o",
+    "Title": "introduction in python",
+    "courses": [
+      "E:\\ip_back\\upload\\sat123\\python3.o\\1715175871.9713423.mp4",
+      "E:\\ip_back\\upload\\sat123\\python3.o\\1715175871.9713519.mp4"
+    ],
+    "template": ["E:\\ip_back\\upload\\sat123\\python3.o\\download.jpeg"]
+  },
+  {
+    "id": 7,
+    "username": "abc123",
+    "email": "abc@123",
+    "label": "hard",
+    "duration": "12",
+    "price": "899",
+    "category": "java",
+    "No_of_lec": "57",
+    "Title": "introduction in java",
+    "courses": [
+      "E:\\ip_back\\upload\\abc123\\java\\Introduction.mp4",
+      "E:\\ip_back\\upload\\abc123\\java\\Singing 1.mp4",
+      "E:\\ip_back\\upload\\abc123\\java\\Singing 2.mp4",
+      "E:\\ip_back\\upload\\abc123\\java\\Singing 3.mp4",
+      "E:\\ip_back\\upload\\abc123\\java\\Singing 4.mp4"
+    ],
+    "template": ["E:\\ip_back\\upload\\abc123\\java\\Thumbnail.jpg"]
+  },
+  {
+    "id": 8,
+    "username": "sat123",
+    "email": "sat@123",
+    "label": "hard",
+    "duration": "12",
+    "price": "456",
+    "category": "js",
+    "No_of_lec": "5",
+    "Title": "introduction in js",
+    "courses": [
+      "E:\\ip_back\\upload\\sat123\\js\\Singing 4.mp4",
+      "E:\\ip_back\\upload\\sat123\\js\\Singing 5.mp4",
+      "E:\\ip_back\\upload\\sat123\\js\\Singing 6.mp4",
+      "E:\\ip_back\\upload\\sat123\\js\\Singing 7.mp4",
+      "E:\\ip_back\\upload\\sat123\\js\\Singing 8.mp4"
+    ],
+    "template": ["E:\\ip_back\\upload\\sat123\\js\\Thumbnail.jpg"]
+  },
+  {
+    "id": 9,
+    "username": "sat123",
+    "email": "sat@123",
+    "label": "Easy",
+    "duration": "12",
+    "price": "789",
+    "category": "jkl",
+    "No_of_lec": "5",
+    "Title": "introduction in jkl",
+    "courses": [
+      "E:\\ip_back\\upload\\sat123\\jkl\\Introduction.mp4",
+      "E:\\ip_back\\upload\\sat123\\jkl\\System Design 1.mp4",
+      "E:\\ip_back\\upload\\sat123\\jkl\\System Design 2.mp4",
+      "E:\\ip_back\\upload\\sat123\\jkl\\System Design 3.mp4"
+    ],
+    "template": ["E:\\ip_back\\upload\\sat123\\jkl\\Thumbnail.jpg"]
+  },
+  {
+    "id": 10,
+    "username": "abc123",
+    "email": "abc@123",
+    "label": " hbnm,",
+    "duration": "12",
+    "price": "456",
+    "category": "uiiiii",
+    "No_of_lec": "5",
+    "Title": "introduction in uiii",
+    "courses": [
+      "E:\\ip_back\\upload\\abc123\\uiiiii\\Introduction.mp4",
+      "E:\\ip_back\\upload\\abc123\\uiiiii\\System Design 1.mp4",
+      "E:\\ip_back\\upload\\abc123\\uiiiii\\System Design 2.mp4",
+      "E:\\ip_back\\upload\\abc123\\uiiiii\\System Design 3.mp4"
+    ],
+    "template": ["E:\\ip_back\\upload\\abc123\\uiiiii\\Thumbnail.jpg"]
+  },
+  {
+    "id": 11,
+    "username": "abc123",
+    "email": "abc@123",
+    "label": "Easy",
+    "duration": "22",
+    "price": "1122",
+    "category": "c++",
+    "No_of_lec": "5",
+    "Title": "introduction in c++",
+    "courses": [
+      "E:\\ip_back\\upload\\abc123\\c++\\Introduction.mp4",
+      "E:\\ip_back\\upload\\abc123\\c++\\System Design 1.mp4",
+      "E:\\ip_back\\upload\\abc123\\c++\\System Design 2.mp4",
+      "E:\\ip_back\\upload\\abc123\\c++\\System Design 3.mp4"
+    ],
+    "template": ["E:\\ip_back\\upload\\abc123\\c++\\Thumbnail.jpg"]
+  },
+  {
+    "id": 12,
+    "username": "sat123",
+    "email": "sat@123",
+    "label": " hbnm,",
+    "duration": "456",
+    "price": "123",
+    "category": "2.pty",
+    "No_of_lec": "5",
+    "Title": "introduction in c++++",
+    "courses": [
+      "E:\\ip_back\\upload\\sat123\\2.pty\\Introduction.mp4",
+      "E:\\ip_back\\upload\\sat123\\2.pty\\System Design 1.mp4",
+      "E:\\ip_back\\upload\\sat123\\2.pty\\System Design 2.mp4",
+      "E:\\ip_back\\upload\\sat123\\2.pty\\System Design 3.mp4"
+    ],
+    "template": ["E:\\ip_back\\upload\\sat123\\2.pty\\Thumbnail.jpg"]
+  }
+]

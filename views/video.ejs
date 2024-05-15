@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Course Playlist</title>
+    <link rel="stylesheet" href="nav.css" />
+    <link rel="stylesheet" href="/playlist.css" />
+  </head>
+  <body>
+    <%- include("nav.ejs") %>
+    <div class="container">
+  <div class="main-video-container">
+    <h2 class="heading_video"><%= data.Title %></h2>
+    <% if (data.courses && data.courses[0]) { %>
+      <video class="main-video" src="<%= data.courses[0].split("\\upload")[1] %>" loop controls></video>
+      <h3 class="main-video__title">house flood animation</h3>
+    <% } %>
+  </div>
+
+  <div class="video-list-container">
+    <h2 class="heading_video">Video Playlist</h2>
+    <% if (data.courses && data.courses.length && data.category) { %>
+      <div class="list active">
+        <video class="list__video" src="<%= data.courses[0].split("\\upload")[1] %>"></video>
+        <h3 class="list__title"><%= data.courses[0].split("\\" + data.category)[1].split(".")[0] %></h3>
+      </div>
+      <% data.courses.forEach((e, i) => { %>
+        <div class="list">
+          <video class="list__video" src="<%= e.split("\\" + data.category)[1].split(".")[0] %>"></video>
+          <h3 class="list__title"><%= e.split("\\" + data.category)[1].split(".")[0] %></h3>
+        </div>
+      <% }); %>
+    <% } else { %>
+      <p>No videos available</p>
+    <% } %>
+  </div>
+</div>
+<script>
+  let videoList = document.querySelectorAll(".video-list-container .list");
+
+  videoList.forEach((vid) => {
+    vid.onclick = () => {
+      videoList.forEach((remove) => {
+        remove.classList.remove("active");
+      });
+      vid.classList.add("active");
+
+      let src = vid.querySelector(".list__video").src;
+      let title = vid.querySelector(".list__title").innerHTML;
+
+      let mainVideo = document.querySelector(".main-video-container .main-video");
+      let mainTitle = document.querySelector(".main-video-container .main-video__title");
+
+      if (mainVideo && mainTitle) {
+        mainVideo.src = src;
+        mainVideo.play();
+        mainTitle.innerHTML = title;
+      }
+    };
+  });
+</script>
+  </body>
+</html>

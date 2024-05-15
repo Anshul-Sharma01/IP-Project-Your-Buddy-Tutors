@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login Page</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="wrapper">
+        <div id="auth" class="authentication">
+          <div class="wrapper">
+            <div id="login" class="card active">
+              <div class="wrapper">
+                <div class="animation login form">
+                  <div class="wrapper">
+                    <h3 class="title">Sign in</h3>
+                    <form>
+                      <div class="form-group input">
+                        <label>Email</label>
+                        <input
+                          type="email"
+                          name="email"
+                          id="user-email-login"
+                          class="user-email"
+                        />
+                      </div>
+                      <div class="form-group input">
+                        <label>Password</label>
+                        <input
+                          type="password"
+                          name="password"
+                          id="user-password-login"
+                          class="user-password"
+                        />
+                      </div>
+                      <button type="submit" class="button color-1 login">
+                        Login
+                      </button>
+                    </form>
+                    <a href="#" id="button-register-switch">Create Account</a>
+                  </div>
+                </div>
+                <div class="animation login note">
+                  <div class="wrapper">
+                    <h1>Hello There</h1>
+                    <p>Don't have an account?</p>
+                    <p>Sign up with us today!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <
+            <div id="register" class="card">
+              <div class="wrapper wrapper_1">
+                <div class="animation register form">
+                  <div class="wrapper">
+                    <h3 class="title">Create Account</h3>
+                    <form action="/sing" method="post">
+                      <div class="form-group input">
+                        <label>Name</label>
+                        <input
+                          type="text"
+                          name="name"
+                          id="user-email-register"
+                          class="user-email"
+                        />
+                      </div>
+                      <div class="form-group input">
+                        <label>Email</label>
+                        <input
+                          type="email"
+                          name="email"
+                          id="user-email-register"
+                          class="user-email"
+                        />
+                      </div>
+                      <div class="form-group input">
+                        <label>Password</label>
+                        <input
+                          type="password"
+                          name="password"
+                          id="user-password-register"
+                          class="user-password"
+                        />
+                      </div>
+                      <div class="form-group input">
+                        <label>Confirm Password</label>
+                        <input
+                          type="password"
+                          id="user-password-register-confirm"
+                          class="user-password-confirm"
+                        />
+                      </div>
+                      <div class="form-group input">
+                        <label>Select Role</label>
+                        <select name="role" id="user-role-register">
+                          <option value="student">Student</option>
+                          <option value="teacher">Teacher</option>
+                        </select>
+                      </div>
+                      <input
+                        type="submit"
+                        class="button color-1 register"
+                        id="button-register"
+                      />
+                    </form>
+                    <a href="/login" id="button-login-switch"
+                      >Already have an account?</a
+                    >
+                  </div>
+                </div>
+                <div class="animation register note">
+                  <div class="wrapper">
+                    <h1>Let's get you started</h1>
+                    <p>Be part of our awesome team and have fun with us</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="sing.js"></script>
+  </body>
+</html>

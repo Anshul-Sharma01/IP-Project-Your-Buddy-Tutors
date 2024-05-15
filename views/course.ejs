@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="All_course.css" />
+    <title>Document</title>
+</head>
+<body>
+<% course.forEach(course =>   { %>
+
+    <%=console.log(course.template[0].split("\\upload")[1])%>
+    <div class="grid-item">
+      
+        <div class="image-container">
+            <a href="/overview/<%=course.id%>"><img src="<%=course.template[0].split("\\upload")[1]%>" alt="Dummy Image" /></a>
+            <span class="text-above">4.0⭐ (4)</span>
+        </div>
+        <br /><br />
+        <div class="course-title"><span><%= course.category %></span></div>
+        <h4>
+            <a href="/overview/<%=course.id%>" class="no-underline"><%= course.Title %></a>
+        </h4>
+        <div class="time-level">
+            <span class="time">
+                <img src="alarm-clock (1).png" alt="Dummy Image" /> <%= course.duration %></span>
+            <span class="level">
+                <img src="businessman.png" alt="Dummy Image" /> <%= course.label %></span>
+        </div>
+        <hr />
+        <div class="mentor">
+            <img src="person.png" alt="Dummy Image" /> <span>Tim Buchalka</span>
+        </div>
+    </div>
+<% }); %>
+</body>
+</html>

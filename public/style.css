@@ -1,0 +1,926 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+
+  /* max-width:100%; */
+  /* padding: 0px; */
+}
+
+/* First section Styling starts here */
+.first_head_section {
+  width: calc(100vw - 20px);
+  height: 100vh;
+  display: flex;
+  margin: 2em 0em;
+  /* justify-content: space-around; */
+  /* align-items: center; */
+}
+
+.main_content_first_head_section {
+  /* text-align: center; */
+  /* padding-left:100px; */
+  width: 60%;
+  margin: 5em;
+  padding: 4px;
+  /* font-size:20px; */
+}
+
+.main_content_first_head_section h1 {
+  font-size: 6em;
+}
+.main_content_first_head_section p {
+  font-size: 2em;
+}
+
+.carousel_for_first_section {
+  /* text-align: center; */
+  margin: auto;
+  width: calc(40% - 20px);
+}
+.search_bar_first_section_courses {
+  display: inline-block;
+  position: relative;
+  margin: 30px;
+  width: 300px; /* Adjust the width as needed */
+}
+
+.search_bar_first_section_courses input[type="text"] {
+  width: 100%; /* Take up full width of the container */
+  padding: 15px; /* Increase padding for better visibility and touch */
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.search_bar_first_section_courses button[type="submit"] {
+  background-color: red;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 15px 20px; /* Increase padding for better visibility and touch */
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  right: 0;
+  transition: 0.2s ease;
+}
+
+.search_bar_first_section_courses button[type="submit"]:hover {
+  transform: scale(1.1);
+  color: rgb(255, 255, 255);
+  background-color: red;
+}
+
+/* Carousel */
+
+.carousel_for_first_section {
+  margin-right: 4em;
+  width: 80%;
+  border-radius: 20px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.9); /* Add box shadow */
+}
+
+.carousel {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+ul.slides {
+  display: block;
+  position: relative;
+  height: 600px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+.slides * {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -webkit-touch-callout: none;
+}
+
+ul.slides input {
+  display: none;
+}
+
+.slide-container {
+  display: block;
+}
+
+.slide-image {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  opacity: 0;
+  transition: all 0.7s ease-in-out;
+}
+
+.slide-image img {
+  width: auto;
+  min-width: 100%;
+  height: 100%;
+}
+
+.carousel-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  font-size: 100px;
+  line-height: 600px;
+  color: #fff;
+}
+
+.carousel-controls label {
+  display: none;
+  position: absolute;
+  padding: 0 20px;
+  opacity: 0;
+  transition: opacity 0.2s;
+  cursor: pointer;
+}
+
+.slide-image:hover + .carousel-controls label {
+  opacity: 0.5;
+}
+
+.carousel-controls label:hover {
+  opacity: 1;
+}
+
+.carousel-controls .prev-slide {
+  width: 49%;
+  text-align: left;
+  left: 0;
+}
+
+.carousel-controls .next-slide {
+  width: 49%;
+  text-align: right;
+  right: 0;
+}
+
+.carousel-dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 20px;
+  z-index: 999;
+  text-align: center;
+}
+
+.carousel-dots .carousel-dot {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.5;
+  margin: 10px;
+}
+
+input:checked + .slide-container .slide-image {
+  opacity: 1;
+  transform: scale(1);
+  transition: opacity 1s ease-in-out;
+}
+
+input:checked + .slide-container .carousel-controls label {
+  display: block;
+}
+
+input#img-1:checked ~ .carousel-dots label#img-dot-1,
+input#img-2:checked ~ .carousel-dots label#img-dot-2,
+input#img-3:checked ~ .carousel-dots label#img-dot-3,
+input#img-4:checked ~ .carousel-dots label#img-dot-4,
+input#img-5:checked ~ .carousel-dots label#img-dot-5,
+input#img-6:checked ~ .carousel-dots label#img-dot-6 {
+  opacity: 1;
+}
+
+input:checked + .slide-container .nav label {
+  display: block;
+}
+
+/* Styling for Second Section Starts from here */
+.sub_second_head_section {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.second_head_section h1 {
+  width: 80vw;
+  font-size: 50px;
+  padding: 1em;
+  text-align: center;
+}
+.second_head_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.second_head_section a {
+  text-decoration: none;
+}
+.card {
+  font-size: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 150px;
+  background: rgb(255, 255, 255);
+  border-radius: 0.4em;
+  box-shadow: 0.3em 0.3em 0.7em #00000015;
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: rgb(250, 250, 250) 0.2em solid;
+}
+
+.line {
+  position: relative;
+  color: red;
+}
+.line::after,
+.line::before {
+  content: "";
+  background: #ff7875;
+  width: 38px;
+  height: 2px;
+  position: absolute;
+  bottom: 8px;
+}
+
+.line::before {
+  left: 140px; /* Adjusted distance from center towards left */
+  transform: translateX(-50%);
+}
+
+.line::after {
+  right: 140px; /* Adjusted distance from center towards right */
+  transform: translateX(50%);
+}
+.card:hover {
+  border: black 1px solid;
+}
+.sub_second_head_section .card ul li {
+  list-style-type: none;
+}
+
+.cssbuttons-io-button {
+  background: red;
+  color: white;
+  font-family: inherit;
+  padding: 0.35em;
+  padding-left: 1.2em;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 0.9em;
+  border: none;
+  letter-spacing: 0.05em;
+  display: flex;
+  align-items: center;
+  box-shadow: inset 0 0 1.6em -0.6em red;
+  overflow: hidden;
+  position: relative;
+  height: 2.8em;
+  padding-right: 3.3em;
+  cursor: pointer;
+}
+
+.cssbuttons-io-button .icon {
+  background: white;
+  margin-left: 1em;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.2em;
+  width: 2.2em;
+  border-radius: 0.7em;
+  box-shadow: 0.1em 0.1em 0.6em 0.2em red;
+  right: 0.3em;
+  transition: all 0.3s;
+}
+
+.cssbuttons-io-button:hover .icon {
+  width: calc(100% - 0.6em);
+}
+
+.cssbuttons-io-button .icon svg {
+  width: 1.1em;
+  transition: transform 0.3s;
+  color: red;
+}
+
+.cssbuttons-io-button:hover .icon svg {
+  transform: translateX(0.1em);
+}
+
+.cssbuttons-io-button:active .icon {
+  transform: scale(0.95);
+}
+
+/* Third Section Styling Starts here */
+.third_head_section_card {
+  box-sizing: border-box;
+  width: 440px;
+  height: 150px;
+  background: white;
+  border: 1px solid white;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: justify;
+  gap: 2px;
+  padding: 10px;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+
+.third_head_section_ul_wrapper ul li {
+  padding: 2px;
+}
+
+.third_head_section_card:hover {
+  border: 1px solid black;
+  transform: scale(1.05);
+}
+
+.third_head_section_card:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
+.third_head_section_img {
+  padding: 5px;
+  /* margin:0px 10px 0px 0px; */
+  border-radius: 10px;
+  width: 200px;
+  height: 120px;
+  border: 2px solid grey;
+}
+.third_head_section_card ul li {
+  list-style-type: none;
+}
+.third_head_section_first_ul {
+  display: flex;
+  gap: 10px;
+  color: grey;
+}
+
+.third_head_section_div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.third_head_section_div a {
+  text-decoration: none;
+  color: black;
+}
+.third_head_section_div a:hover {
+  color: blue;
+}
+.line2 {
+  position: relative;
+  color: red;
+}
+.line2::after,
+.line2::before {
+  content: "";
+  background: #ff7875;
+  width: 38px;
+  height: 2px;
+  position: absolute;
+  bottom: 8px;
+}
+
+.line2::after {
+  right: -30px; /* Adjusted distance from center towards right */
+  transform: translateX(50%);
+}
+.line2::before {
+  right: 160px; /* Adjusted distance from center towards right */
+  transform: translateX(50%);
+}
+
+.third_head_section {
+  /* display: flex;
+    flex-direction:column;
+    justify-content: center; */
+  /* align-items:center; */
+  text-align: center;
+  margin: 10px;
+  padding: 60px;
+}
+.third_head_section h2 {
+  font-size: 50px;
+  padding: 50px;
+}
+/* Third Section Styling Ends here */
+
+/* Fourth Section Styling starts here */
+.fourth_head_section_card {
+  position: relative;
+  width: 340px;
+  height: 250px;
+  border-radius: 14px;
+  z-index: 1111;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+  padding: 5px;
+}
+.fourth_head_section_card_bg h4 {
+  font-size: 25px;
+}
+
+.fourth_head_section_card_bg {
+  font-size: 20px;
+  text-align: justify;
+  position: absolute;
+  padding: 30px;
+  word-spacing: 1px;
+  top: 5px;
+  left: 5px;
+  width: 340px;
+  height: 240px;
+  z-index: 2;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(24px);
+  border-radius: 10px;
+  overflow: hidden;
+  outline: 2px solid white;
+}
+
+.fourth_head_section_bg_blob {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  width: 350px;
+  height: 150px;
+  border-radius: 50%;
+  background-color: #ff0000;
+  opacity: 1;
+  filter: blur(12px);
+  animation: blob-bounce 5s infinite ease;
+}
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+
+.fourth_head_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fourth_head_section_card {
+  z-index: 2;
+}
+.fourth_head_section_card_bg h2 {
+  margin: 20px 0px;
+}
+
+.tilted-image {
+  height: 300px; /* Adjust the x and y values to your liking */
+}
+
+.fourth_head_right_section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  /* width:40%; */
+}
+
+.line3 {
+  position: relative;
+  color: red;
+  font-size: 20px;
+}
+.line3::after {
+  content: "";
+  background: #ff7875;
+  width: 38px;
+  height: 2px;
+  position: absolute;
+  bottom: 8px;
+}
+
+.line3::after {
+  right: -30px; /* Adjusted distance from center towards right */
+  transform: translateX(50%);
+}
+
+.fourth_head_left_section {
+  font-size: 40px;
+  /* width:60%; */
+  margin: 10px;
+  padding: 50px;
+}
+.fourth_head_section_card_bg i {
+  box-shadow: 20px 0 15px -1px rgba(255, 80, 80, 0.8);
+}
+
+/* Fourth Section Styling ends here */
+
+/* Fifth Section Styling Starts here */
+.fifth_head_section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.fifth_head_section_uppersec {
+  text-align: center;
+}
+.fifth_head_section_uppersec h2 {
+  font-size: 40px;
+}
+.fifth_head_section {
+  text-align: center;
+  padding: 10px;
+}
+
+.fifth_head_section_lowersec {
+  display: flex;
+  gap: 60px;
+  justify-content: center;
+  padding: 40px;
+}
+
+.author span i {
+  padding: 0px 2px;
+}
+
+.fifth_section_card {
+  width: 250px;
+  height: 280px;
+  background: white;
+  padding: 0.4em;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+.fifth_section_card-image {
+  background-color: rgb(236, 236, 236);
+  width: 100%;
+  height: 200px;
+  border-radius: 6px 6px 0 0;
+}
+
+.fifth_section_card_heading {
+  font-weight: 600;
+  color: rgb(88, 87, 87);
+  padding: 7px;
+}
+
+.heading:hover,
+.name:hover {
+  cursor: text;
+}
+
+.author {
+  color: gray;
+  font-weight: 400;
+  font-size: 11px;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.author span {
+  padding: 20px;
+}
+
+.line4 {
+  position: relative;
+  color: red;
+}
+.line4::after,
+.line4::before {
+  content: "";
+  background: #ff7875;
+  width: 38px;
+  height: 2px;
+  position: absolute;
+  bottom: 8px;
+}
+
+.line4::after {
+  right: -30px; /* Adjusted distance from center towards right */
+  transform: translateX(50%);
+}
+
+.line4::before {
+  right: 120px; /* Adjusted distance from center towards right */
+  transform: translateX(50%);
+}
+
+/* Fifth Section Styling Ends here */
+
+/* Sixth Section Styling starts here */
+/* Hide the scrollbar */
+.testimonial {
+  width: 100%;
+  max-width: 1200px; /* Set a maximum width */
+  overflow-x: auto; /* Enable horizontal scrolling */
+  white-space: nowrap; /* Prevent slides from wrapping */
+  display: flex;
+  justify-content: flex-start; /* Start from the left */
+  color: #3d5a80;
+  margin: 120px auto; /* Adjust top and bottom margin as needed */
+}
+.testimonial-slide {
+  padding: 0 20px; /* Adjust padding as needed */
+  display: inline-block; /* Display slides inline */
+  vertical-align: top; /* Align slides to the top */
+}
+
+/* Style the scrollbar track */
+.testimonial::-webkit-scrollbar {
+  display: none; /* Hide the scrollbar */
+}
+
+/* Style the scrollbar thumb (optional) */
+.testimonial::-webkit-scrollbar-thumb {
+  background-color: #ddd; /* Change scrollbar thumb color */
+}
+
+/* Add other styles for the testimonials as needed */
+
+.testimonial_box-top {
+  background-color: #e0fbfc;
+  padding: 30px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  box-shadow: 5px 5px 20px rgba(152, 193, 217, 0.493);
+}
+
+.testimonial_box-icon {
+  padding: 10px 0;
+}
+
+.testimonial_box-icon i {
+  font-size: 25px;
+  color: #14213d;
+}
+
+.testimonial_box-text {
+  padding: 10px 0;
+}
+
+.testimonial_box-text p {
+  color: #293241;
+  font-size: 14px;
+  line-height: 20px;
+  margin-bottom: 0;
+}
+
+.testimonial_box-img {
+  padding: 20px 0 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.testimonial_box-img img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50px;
+  border: 2px solid #e5e5e5;
+}
+
+.testimonial_box-name {
+  padding-top: 10px;
+}
+
+.testimonial_box-name h4 {
+  font-size: 20px;
+  line-height: 25px;
+  color: #293241;
+  margin-bottom: 0;
+}
+
+.testimonial_box-job p {
+  color: #293241;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 20px;
+  font-weight: 300;
+  margin-bottom: 0;
+}
+
+.sixth_head_section {
+  text-align: center;
+  margin: 30px;
+  position: relative; /* Make the section a positioning context */
+}
+
+.line5 {
+  position: relative;
+  color: red;
+}
+
+.line5::after,
+.line5::before {
+  content: "";
+  background: #ff7875;
+  width: 38px;
+  height: 2px;
+  position: absolute;
+  bottom: 8px;
+}
+
+.line5::before {
+  left: 140px; /* Adjusted distance from center towards left */
+  transform: translateX(-50%);
+}
+
+.line5::after {
+  right: 140px; /* Adjusted distance from center towards right */
+  transform: translateX(50%);
+}
+
+.sixth_head_section h2 {
+  position: absolute; /* Position the text absolutely */
+  top: 60px; /* Adjust the top distance as needed */
+  left: 50%; /* Align horizontally */
+  transform: translateX(-50%); /* Center horizontally */
+  font-size: 36px; /* Adjust font size as needed */
+}
+
+/* Add additional styling for the text if necessary */
+
+/* Sixth Section Styling Ends here */
+
+/* Seventh Section Styling starts here */
+.seventh_head_section {
+  display: flex;
+  background-color: #ff3158;
+  position: relative;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+  padding: 10px 20px;
+  left: 8em;
+  border-radius: 10px;
+  margin: 50px 0px;
+}
+
+.seventh_head_section_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0px;
+}
+.seventh_head_section_wrapper i {
+  font-size: 24px; /* Adjust the size as needed */
+}
+
+.seventh_head_section_wrapper h3 {
+  font-size: 40px;
+  color: white;
+  padding: 0px;
+}
+
+.seventh_head_section_wrapper p {
+  color: white;
+  padding: 0px;
+  font-size: 20px;
+}
+/* Seventh Section Styling Ends here */
+
+/* Eigth Section Styling Starts here */
+
+.eigth_head_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  margin: 80px 0px;
+}
+
+.line6 {
+  position: relative;
+  color: red;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.line6::after {
+  content: "";
+  background: #ff7875;
+  width: 70px;
+  height: 3px;
+  position: absolute;
+  bottom: 15px;
+}
+
+.eigth_section_ul {
+  width: 45%;
+}
+
+.eigth_section_main_img {
+  height: 550px;
+}
+
+.line6::after {
+  right: -50px; /* Adjusted distance from center towards right */
+  transform: translateX(50%);
+}
+
+.eigth_section_ul li h2 {
+  font-size: 50px;
+}
+.eigth_section_ul li {
+  list-style-type: none;
+  padding: 5px;
+}
+
+.fa-check {
+  color: red;
+  margin: 5px;
+}
+
+.eigth_section_li_special {
+  font-weight: 600;
+  padding: 2px 10px;
+  font-size: 20px;
+}
+
+.eigth_section_btn {
+  background: #ff3158;
+  color: white;
+  font-size: 15px;
+  margin: 12px 0px;
+  padding: 15px 25px;
+  border-radius: 10px;
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.eigth_section_btn:hover {
+  background: white;
+  color: #ff3158;
+  cursor: pointer;
+  border: 2px solid #ff3158;
+}
+.eigth_section_btn svg {
+  height: 30px;
+}
+
+/* Eigth Section Styling Ends here */
+
+/* Footer Styling starts here */
